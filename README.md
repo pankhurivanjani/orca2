@@ -41,12 +41,16 @@ Build Orca2:
 mkdir -p ~/ros2/orca_ws/src
 cd ~/ros2/orca_ws/src
 git clone https://github.com/clydemcqueen/orca2.git
+
+**git checkout dashing
+
 git clone https://github.com/clydemcqueen/ukf.git
 git clone https://github.com/ptrmu/fiducial_vlam.git
 git clone https://github.com/ptrmu/ros2_shared.git
 cd ~/ros2/orca2_ws
+
 source /opt/ros/dashing/setup.bash
-colcon build
+colcon build --symlink-install
 ~~~
 
 Run the simulation:
